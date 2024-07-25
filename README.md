@@ -5,10 +5,10 @@
   Capacitor plugin for Navigation Bar manipulation.
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/maintenance/yes/2023?style=flat-square" />
-  <a href="https://github.com/mauricewegner/navigation-bar/actions?query=workflow%3A%22CI%22"><img src="https://img.shields.io/github/workflow/status/mauricewegner/navigation-bar/CI/master?style=flat-square" /></a>
-  <a href="https://www.npmjs.com/package/@mauricewegner/capacitor-navigation-bar"><img src="https://img.shields.io/npm/l/@mauricewegner/capacitor-navigation-bar?style=flat-square" /></a>
+<p align="center"
+  <img src="https://img.shields.io/maintenance/yes/2024?style=flat-square" />
+  <a href="https://github.com/hugotomazi/navigation-bar/actions?query=workflow%3A%22CI%22"><img src="https://img.shields.io/github/workflow/status/hugotomazi/navigation-bar/CI/master?style=flat-square" /></a>
+  <a href="https://www.npmjs.com/package/@hugotomazi/capacitor-navigation-bar"><img src="https://img.shields.io/npm/l/@hugotomazi/capacitor-navigation-bar?style=flat-square" /></a>
 <br>
   <a href="https://www.npmjs.com/package/@mauricewegner/capacitor-navigation-bar"><img src="https://img.shields.io/npm/dw/@mauricewegner/capacitor-navigation-bar?style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/@mauricewegner/capacitor-navigation-bar"><img src="https://img.shields.io/npm/v/@mauricewegner/capacitor-navigation-bar?style=flat-square" /></a>
@@ -120,7 +120,7 @@ Gets the current color of the navigation bar in Hexadecimal.
 ### addListener(NavigationBarPluginEvents.SHOW, ...)
 
 ```typescript
-addListener(event: NavigationBarPluginEvents.SHOW, listenerFunc: () => void) => PluginListenerHandle
+addListener(event: NavigationBarPluginEvents.SHOW, listenerFunc: () => void) => Promise<PluginListenerHandle>
 ```
 
 Event fired after navigation bar is displayed
@@ -130,7 +130,7 @@ Event fired after navigation bar is displayed
 | **`event`**        | <code><a href="#navigationbarpluginevents">NavigationBarPluginEvents.SHOW</a></code> | The event   |
 | **`listenerFunc`** | <code>() =&gt; void</code>                                                           | Callback    |
 
-**Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
 --------------------
 
@@ -138,7 +138,7 @@ Event fired after navigation bar is displayed
 ### addListener(NavigationBarPluginEvents.HIDE, ...)
 
 ```typescript
-addListener(event: NavigationBarPluginEvents.HIDE, listenerFunc: () => void) => PluginListenerHandle
+addListener(event: NavigationBarPluginEvents.HIDE, listenerFunc: () => void) => Promise<PluginListenerHandle>
 ```
 
 Event fired after navigation bar is hidden
@@ -148,7 +148,7 @@ Event fired after navigation bar is hidden
 | **`event`**        | <code><a href="#navigationbarpluginevents">NavigationBarPluginEvents.HIDE</a></code> | The event   |
 | **`listenerFunc`** | <code>() =&gt; void</code>                                                           | Callback    |
 
-**Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
 --------------------
 
@@ -156,7 +156,7 @@ Event fired after navigation bar is hidden
 ### addListener(NavigationBarPluginEvents.COLOR_CHANGE, ...)
 
 ```typescript
-addListener(event: NavigationBarPluginEvents.COLOR_CHANGE, listenerFunc: (returnObject: { color: string; }) => void) => PluginListenerHandle
+addListener(event: NavigationBarPluginEvents.COLOR_CHANGE, listenerFunc: (returnObject: { color: string; }) => void) => Promise<PluginListenerHandle>
 ```
 
 Event fired after navigation bar color is changed
@@ -166,7 +166,7 @@ Event fired after navigation bar color is changed
 | **`event`**        | <code><a href="#navigationbarpluginevents">NavigationBarPluginEvents.COLOR_CHANGE</a></code> | The event   |
 | **`listenerFunc`** | <code>(returnObject: { color: string; }) =&gt; void</code>                                   | Callback    |
 
-**Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
 --------------------
 
