@@ -1,5 +1,7 @@
 package br.com.tombus.capacitor.plugin.navigationbar;
 
+import android.view.View;
+
 import android.graphics.Color;
 import android.os.Build;
 import android.view.Window;
