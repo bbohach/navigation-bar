@@ -12,16 +12,16 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "MauricewegnerCapacitorNavigationBar.podspec"
+    "HugotomaziCapacitorNavigationBar.podspec"
   ],
-  "author": "mauricewegner",
+  "author": "hugotomazi",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mauricewegner/navigation-bar.git"
+    "url": "git+https://github.com/hugotomazi/navigation-bar.git"
   },
   "bugs": {
-    "url": "https://github.com/mauricewegner/navigation-bar/issues"
+    "url": "https://github.com/hugotomazi/navigation-bar/issues"
   },
   "keywords": [
     "capacitor",

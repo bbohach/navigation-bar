@@ -1,6 +1,6 @@
 <p align="center"><br><img src="https://user-images.githubusercontent.com/236501/85893648-1c92e880-b7a8-11ea-926d-95355b8175c7.png" width="128" height="128" /></p>
 <h3 align="center">Navigation Bar</h3>
-<p align="center"><strong><code>@mauricewegner/capacitor-navigation-bar</code></strong></p>
+<p align="center"><strong><code>@hugotomazi/capacitor-navigation-bar</code></strong></p>
 <p align="center">
   Capacitor plugin for Navigation Bar manipulation.
 </p>
@@ -10,18 +10,18 @@
   <a href="https://github.com/hugotomazi/navigation-bar/actions?query=workflow%3A%22CI%22"><img src="https://img.shields.io/github/workflow/status/hugotomazi/navigation-bar/CI/master?style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/@hugotomazi/capacitor-navigation-bar"><img src="https://img.shields.io/npm/l/@hugotomazi/capacitor-navigation-bar?style=flat-square" /></a>
 <br>
-  <a href="https://www.npmjs.com/package/@mauricewegner/capacitor-navigation-bar"><img src="https://img.shields.io/npm/dw/@mauricewegner/capacitor-navigation-bar?style=flat-square" /></a>
-  <a href="https://www.npmjs.com/package/@mauricewegner/capacitor-navigation-bar"><img src="https://img.shields.io/npm/v/@mauricewegner/capacitor-navigation-bar?style=flat-square" /></a>
+  <a href="https://www.npmjs.com/package/@hugotomazi/capacitor-navigation-bar"><img src="https://img.shields.io/npm/dw/@hugotomazi/capacitor-navigation-bar?style=flat-square" /></a>
+  <a href="https://www.npmjs.com/package/@hugotomazi/capacitor-navigation-bar"><img src="https://img.shields.io/npm/v/@hugotomazi/capacitor-navigation-bar?style=flat-square" /></a>
 </p>
 <br/>
 <p align="center">
-  <img height="450" src="https://github.com/mauricewegner/navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
+  <img height="450" src="https://github.com/hugotomazi/navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
 </p>
 
 ## Install
 
 ```bash
-npm install @mauricewegner/capacitor-navigation-bar
+npm install @hugotomazi/capacitor-navigation-bar
 npx cap sync
 ```
 
@@ -33,18 +33,18 @@ No configuration required for this plugin.
 
 <docgen-index>
 
-* [`show()`](#show)
-* [`hide()`](#hide)
-* [`setColor(...)`](#setcolor)
-* [`setTransparency(...)`](#settransparency)
-* [`getColor()`](#getcolor)
-* [`addListener(NavigationBarPluginEvents.SHOW, ...)`](#addlistenernavigationbarplugineventsshow)
-* [`addListener(NavigationBarPluginEvents.HIDE, ...)`](#addlistenernavigationbarplugineventshide)
-* [`addListener(NavigationBarPluginEvents.COLOR_CHANGE, ...)`](#addlistenernavigationbarplugineventscolor_change)
-* [`addListener(NavigationBarPluginEvents.IMMERSIVE_VIEW_CHANGE, ...)`](#addlistenernavigationbarplugineventsimmersive_view_change)
-* [`removeAllListeners()`](#removealllisteners)
-* [Interfaces](#interfaces)
-* [Enums](#enums)
+- [`show()`](#show)
+- [`hide()`](#hide)
+- [`setColor(...)`](#setcolor)
+- [`setTransparency(...)`](#settransparency)
+- [`getColor()`](#getcolor)
+- [`addListener(NavigationBarPluginEvents.SHOW, ...)`](#addlistenernavigationbarplugineventsshow)
+- [`addListener(NavigationBarPluginEvents.HIDE, ...)`](#addlistenernavigationbarplugineventshide)
+- [`addListener(NavigationBarPluginEvents.COLOR_CHANGE, ...)`](#addlistenernavigationbarplugineventscolor_change)
+- [`addListener(NavigationBarPluginEvents.IMMERSIVE_VIEW_CHANGE, ...)`](#addlistenernavigationbarplugineventsimmersive_view_change)
+- [`removeAllListeners()`](#removealllisteners)
+- [Interfaces](#interfaces)
+- [Enums](#enums)
 
 </docgen-index>
 
@@ -59,8 +59,7 @@ show() => Promise<void>
 
 Display the navigation bar.
 
---------------------
-
+---
 
 ### hide()
 
@@ -70,8 +69,7 @@ hide() => Promise<void>
 
 Hide the navigation bar.
 
---------------------
-
+---
 
 ### setColor(...)
 
@@ -80,14 +78,13 @@ setColor(options: ColorParameters) => Promise<void>
 ```
 
 Change the color of the navigation bar.
-*Support alpha hexadecimal numbers.
+\*Support alpha hexadecimal numbers.
 
 | Param         | Type                                                        |
 | ------------- | ----------------------------------------------------------- |
 | **`options`** | <code><a href="#colorparameters">ColorParameters</a></code> |
 
---------------------
-
+---
 
 ### setTransparency(...)
 
@@ -101,8 +98,7 @@ Set the Transparency
 | ------------- | ---------------------------------------- |
 | **`options`** | <code>{ isTransparent: boolean; }</code> |
 
---------------------
-
+---
 
 ### getColor()
 
@@ -114,8 +110,7 @@ Gets the current color of the navigation bar in Hexadecimal.
 
 **Returns:** <code>Promise&lt;{ color: string; }&gt;</code>
 
---------------------
-
+---
 
 ### addListener(NavigationBarPluginEvents.SHOW, ...)
 
@@ -132,8 +127,7 @@ Event fired after navigation bar is displayed
 
 **Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
---------------------
-
+---
 
 ### addListener(NavigationBarPluginEvents.HIDE, ...)
 
@@ -150,8 +144,7 @@ Event fired after navigation bar is hidden
 
 **Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
---------------------
-
+---
 
 ### addListener(NavigationBarPluginEvents.COLOR_CHANGE, ...)
 
@@ -168,8 +161,7 @@ Event fired after navigation bar color is changed
 
 **Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
---------------------
-
+---
 
 ### addListener(NavigationBarPluginEvents.IMMERSIVE_VIEW_CHANGE, ...)
 
@@ -186,8 +178,7 @@ Event fired after navigation bar color is changed
 
 **Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
---------------------
-
+---
 
 ### removeAllListeners()
 
@@ -197,11 +188,9 @@ removeAllListeners() => Promise<void>
 
 Remove all native listeners for this plugin.
 
---------------------
-
+---
 
 ### Interfaces
-
 
 #### ColorParameters
 
@@ -210,16 +199,13 @@ Remove all native listeners for this plugin.
 | **`color`**       | <code>string</code>  | Sets the new color of the navigation bar.                                 |
 | **`darkButtons`** | <code>boolean</code> | Sets whether the default navigation bar buttons should be black or white. |
 
-
 #### PluginListenerHandle
 
 | Prop         | Type                                      |
 | ------------ | ----------------------------------------- |
 | **`remove`** | <code>() =&gt; Promise&lt;void&gt;</code> |
 
-
 ### Enums
-
 
 #### NavigationBarPluginEvents
 
