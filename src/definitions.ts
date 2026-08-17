@@ -68,7 +68,7 @@ export interface NavigationBarPlugin {
   addListener(
     event: NavigationBarPluginEvents.IMMERSIVE_VIEW_CHANGE,
     listenerFunc: (returnObject: { isImmersiveMode: string }) => void
-  ): PluginListenerHandle;
+  ): Promise<PluginListenerHandle>;
 
   /**
    * Remove all native listeners for this plugin.
